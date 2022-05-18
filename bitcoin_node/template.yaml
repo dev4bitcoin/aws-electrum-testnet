@@ -207,8 +207,8 @@ Resources:
       GroupDescription: Access to the ECS hosts and the tasks/containers that run on them
       SecurityGroupIngress:
         - IpProtocol: tcp
-          FromPort: 50002
-          ToPort: 50002
+          FromPort: 51002
+          ToPort: 51002
           CidrIp: 0.0.0.0/0
       Tags:
         - Key: Name
@@ -267,11 +267,11 @@ Resources:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
       TargetType: ip
-      Port: 50002
+      Port: 51002
       Protocol: TCP
       HealthCheckEnabled: true
       HealthCheckIntervalSeconds: 10
-      HealthCheckPort: 50002
+      HealthCheckPort: 51002
       HealthCheckProtocol: TCP
       HealthCheckTimeoutSeconds: 10
       HealthyThresholdCount: 3
