@@ -74,7 +74,7 @@ Resources:
           Image: !Ref 'ImageUrl'
           PortMappings:
             - ContainerPort: !Ref 'ContainerPort'
-            - ContainerPort: 50002
+            - ContainerPort: 51002
           MountPoints:
             - ContainerPath: /root/bitcoin_data
               SourceVolume: efsdata
