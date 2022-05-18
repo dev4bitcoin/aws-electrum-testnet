@@ -27,7 +27,7 @@ RUN cd electrumx && pip3 install .
 COPY start.sh /root/
 RUN chmod +x /root/start.sh
 
-EXPOSE 50002
+EXPOSE 51002
 
 # start
 CMD ["bash", "-c", "ls -la && exec /root/start.sh"]
